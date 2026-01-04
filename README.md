@@ -27,3 +27,4 @@ A full-stack web-based Student Record Management System built using:
 ```bash
 git clone https://github.com/Aditya26279/student-record-management-system.git
 cd student-record-management-system
+# Student-Record-Management-System
