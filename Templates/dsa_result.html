@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>DSA Result: {{ action }}</h2>
+<table class="data">
+<thead><tr><th>Roll</th><th>Name</th><th>Marks</th></tr></thead>
+<tbody>
+  {% for r in entries %}
+  <tr><td>{{ r[0] }}</td><td>{{ r[1] }}</td><td>{{ r[2] }}</td></tr>
+  {% endfor %}
+</tbody>
+</table>
+{% endblock %}

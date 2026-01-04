@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>DSA Stats</h2>
+<ul>
+  <li>Count: {{ stats['count'] }}</li>
+  <li>Average: {{ stats['avg']|round(2) }}</li>
+  <li>Min: {{ stats['min'] }}</li>
+  <li>Max: {{ stats['max'] }}</li>
+</ul>
+{% endblock %}

@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Database
+students.db
+
+# C build
+*.o
+*.so
+*.dll
+
+# Charts
+static/charts/
+
+# OS
+.DS_Store
+Thumbs.db

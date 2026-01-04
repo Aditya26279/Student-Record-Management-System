@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>Dashboard</h2>
+<p>Welcome {{ user }} ({{ role }})</p>
+
+<p>
+  <a href="{{ url_for('students') }}">Manage Students</a> |
+  <a href="{{ url_for('dsa_sort', by='roll') }}">Sort by Roll (C)</a> |
+  <a href="{{ url_for('dsa_sort', by='name') }}">Sort by Name (C)</a> |
+  <a href="{{ url_for('dsa_stats') }}">Stats (C)</a> |
+  <a href="{{ url_for('chart') }}">Chart</a> |
+  <a href="{{ url_for('export_pdf') }}">Export PDF</a> |
+  <a href="{{ url_for('export_excel') }}">Export Excel</a>
+</p>
+
+<form method="post" action="{{ url_for('dsa_search') }}" style="margin-bottom:1rem;">
+  <label>Search roll (C)</label>
+  <input name="roll_key" placeholder="roll">
+  <button type="submit">Search</button>
+</form>
+
+<table class="data">
+  <thead><tr><th>Roll</th><th>Name</th><th>Marks</th></tr></thead>
+  <tbody>
+    {% for r in rows %}
+      <tr><td>{{ r['roll'] }}</td><td>{{ r['name'] }}</td><td>{{ r['marks'] }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
