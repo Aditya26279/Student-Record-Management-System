@@ -1,19 +1,67 @@
+# ===============================
 # Python
+# ===============================
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Virtual Environments
 venv/
+.venv/
+env/
+ENV/
 
-# Database
-students.db
+# Environment variables
+.env
+.env.*
 
-# C build
+# Pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+logs/
+*.log
+
+# ===============================
+# C / C++ Build Files
+# ===============================
+*.exe
+*.out
 *.o
+*.obj
+*.a
 *.so
 *.dll
 
-# Charts
-static/charts/
+# Build directories
+build/
+dist/
 
-# OS
+# ===============================
+# OS Files
+# ===============================
 .DS_Store
 Thumbs.db
+
+# ===============================
+# IDE / Editor
+# ===============================
+.vscode/
+.idea/
+*.swp
+
+# ===============================
+# Git
+# ===============================
+.git/
+.gitignore
+
+# ===============================
+# Test Output Files
+# ===============================
+test_output.txt
+test_output2.txt
+test_output3.txt
+test_results.txt

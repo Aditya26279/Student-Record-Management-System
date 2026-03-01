@@ -1,2 +1,0 @@
-First - gcc -O2 -shared -o studentdsa.dll student_dsa_shared.c
-Second - python3 app.py
